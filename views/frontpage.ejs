@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Like or Pass</title>
+	<style>
+		/* CSS styles go here */
+		
+	body {
+		background-color: rgb(255, 255, 255);
+		background-image: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=996&t=st=1684257665~exp=1684258265~hmac=ec0d2c8345282740b402dea9f6b4b73ca7a9b069f81f01dbf3ea8e6dcc8bfd9c');
+		color: rgb(0, 0, 0);
+		background-size: 2000px 1200px ;
+	}
+		#images {
+			display: flex;
+			justify-content: space-around;
+			margin: 50px 0;
+		}
+		.image-container3 {
+			margin-left: auto;
+			width: 350px;
+			margin-right: 20px;
+			height: 350px;
+			overflow: hidden;
+			border: 2px solid rgb(0, 0, 0);
+			border-radius: 2px;
+		}
+		.image-container3 img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.image-container2 {
+			width: 350px;
+			height: 350px;
+			margin-left: 20px;
+			overflow: hidden;
+			margin-right: auto;
+			border: 2px solid black;
+			border-radius: 2px;
+		}
+		.image-container2 img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+        p{
+            text-align: center;
+            text-shadow: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+		h1{
+            text-align: center;
+            text-shadow: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+	</style>
+	<script>
+	</script>
+</head>
+
+
+
+
+
+
+
+<body>  
+	<!--- pop up--->
+	<div class="popup-container" id="popup">
+		<div class="popup">
+      <p>NIET</p>
+			<h1 style="font-family: 'Courier New', Courier, monospace;">Like or Pass</h1>
+			<p>Welcome to our Like or Pass game! Get ready to rate the hottest boys from the first year campus of NIET. It's your chance to spill the beans and have some fun! We believe that it's not just the boys who get to have all the fun, so join us now and help us elevate the ranking system. Don't miss out on the excitement, come join us today!
+ </p>
+			<button style="font-size: 20px;" id="start" onclick="hidePopup()">Start now</button>
+		</div>
+	</div>
+
+<style>
+
+  .popup-container h1{
+  margin-top: 0px;
+  margin-bottom: 0%;
+}
+  .popup-container button{
+  margin-top: 10px;
+  border-radius: 5px;
+  text-size-adjust: 10px;
+  text-emphasis-color: white;
+  color: aliceblue;
+  background-color: rgb(27, 25, 25);
+}
+.popup-container p{
+  margin-top: 0px;
+  text-shadow: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 0%;
+}
+.popup-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+  text-align: center;
+	align-items: center;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+.popup {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+  width: 500px;
+}
+
+.main-content {
+	filter:blur(100px);
+	pointer-events: none;
+}
+
+.popup-container.hide {
+	display: none;
+}
+
+.main-content.enable {
+	filter: none;
+	pointer-events: auto;
+}
+footer {
+	width: 100%;
+	height: 100%;
+	margin-top: 300px;
+}
+.image-container {
+	
+	align-content: center;
+    display: flex; /* use flexbox layout */
+    flex-direction: row; /* display items in a row */
+    align-items: center; /* center items vertically */
+    justify-content: center; /* center items horizontally */
+  }
+
+  .image-container p {
+    margin-right: 20px; /* add some spacing between the text and the image */
+  }
+
+  .image-container img {
+    height: 30px;
+  }
+  .image-container-green {
+    border: 5px solid green;
+	border-radius: 5px;
+  }
+
+  .image-container-red {
+    border: 5px solid rgb(4, 3, 3);
+	border-radius: 5px;
+  }
+  
+</style>
+<script>
+function showPopup() {
+	document.getElementById("popup").classList.remove("hide");
+	document.querySelector(".main-content").classList.add("enable");
+}
+
+function hidePopup() {
+	document.getElementById("popup").classList.add("hide");
+	document.querySelector(".main-content").classList.remove("enable");
+}
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img class="logo" src="https://uploads-ssl.webflow.com/60cca9384ff7eaa931a24b69/60ce440d8fffcaf55396b276_meanstack-p-500.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+				  <li class="nav-item">
+						<a class="nav-link" href="#about">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#service">Service</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact Us</a>
+					</li>
+	
+			</div>
+		</div>
+	</nav>
+	
+	
+
+
+
+
+
+	<p>Were we let in for our looks ? No. Will we be judged on them ? Yes.</p>
+	<br>
+	<header>
+		<h1 style="background-image: url('https://img.freepik.com/free-vector/abstract-digital-low-poly-connection-banner-design_1017-32434.jpg?w=1380&t=st=1684257888~exp=1684258488~hmac=990a8fa3b638d240faefdda791acbb35397cfe4a46f196a5bab6f991e3caebec'); text-size-adjust: 20px; text-align: center; font-family: 'Courier New', Courier, monospace; color: azure; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; max-width: fit-content; margin: auto;">_Who's_Hotter_?</h1>
+	</header>
+	
+	<main>
+		<div id="images">
+			<div class="image-container3">
+				<img src="" id="image1" onclick="onclickimg1()">
+			</div>
+			<div class="row"> 
+			<p style="font-style: italic; font-family: 'Courier New', Courier, monospace; font-size: 90px;"> Vs</p>
+	
+		</div>
+			<div class="image-container2">
+				<img src="" id="image2" onclick="onclickimg2()">
+			</div>
+		</div>
+		<script>
+			gifarray =["https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjgzNjE3OTBiNjBhZTI5YTI1YzRmNDFkYzVlM2QwZjc4MTYzOTdkOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/ION5RNetqTp28GH096/giphy.gif","https://i.imgur.com/NCnqxOf.gif", "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjQyYTk4Y2IyMzc3NTUwZjE1ZWY5N2E1OTRlZjJlZGI0MzhkNjQ2NyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT9KVMpeOY9noCpBDy/giphy.gif","https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWQ3OTg0ZTQ3ZWExNDdhN2MwZDM5NTViY2ZkMzA2YjdmOTc4NDBjNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xUA7b9TMwQW3iL3CgM/giphy.gif" ]
+
+
+
+		array= ["http://www.reactiongifs.com/r/h-d.gif","http://www.reactiongifs.com/r/h-d.gif", "http://www.reactiongifs.com/r/h-d.gif", "https://instagram.fdel1-5.fna.fbcdn.net/v/t51.2885-15/241824587_308571904401456_9098793943868346007_n.jpg?stp=dst-jpg_e35_s320x320&_nc_ht=instagram.fdel1-5.fna.fbcdn.net&_nc_cat=100&_nc_ohc=kwvzb8DrSVAAX_7vPme&edm=AJXOVykBAAAA&ccb=7-5&ig_cache_key=MjY2MTcwODMzODAwNTQ5Njg3MQ%3D%3D.2-ccb7-5&oh=00_AfA2oKwLGC4GYQrx89mRq8QDMg5aqMf9KvQUqZVyDJ1YwQ&oe=645AD6DE&_nc_sid=9c1db7","https://scontent.cdninstagram.com/v/t1.15752-9/342494689_788086219184790_8244536868771557508_n.jpg?stp=dst-jpg_s320x320&_nc_cat=106&ccb=1-7&_nc_sid=5a057b&_nc_ohc=YpS2-2rUssoAX8LRUc5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdSSIxrjsAkX_wUFwfR9k5qhHqC2qwIALiAypCD7XeFI0A&oe=647CCB44","https://scontent.cdninstagram.com/v/t1.15752-9/248619824_1299702690506564_8051308207080941420_n.jpg?stp=dst-jpg_p320x320&_nc_cat=109&ccb=1-7&_nc_sid=5a057b&_nc_ohc=nP6ahWvf0u0AX8ggjJx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdSfyWfin8MPjdMqR2m54mRWaK7AUpbi2NO_H-4Jz6spWg&oe=647CCE7A","https://scontent.cdninstagram.com/v/t1.15752-9/345195041_3360032997643048_3510591428246587387_n.jpg?stp=dst-jpg_s480x480&_nc_cat=106&ccb=1-7&_nc_sid=5a057b&_nc_ohc=QRQ4LKzlaPMAX_vV9OP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdT6UYqyhDq51loHUaGgL9Hc62NOE4BmaUkKUSLYvtdY1Q&oe=647CA50B"]
+		var image1 = document.getElementById("image1");
+		var image2 = document.getElementById("image2");
+
+		
+		function imagegenerator1(){
+
+			
+			const border1 = document.querySelector('.image-container3');
+			const border2 = document.querySelector('.image-container2');	
+			border2.style.border = '10px solid white';
+
+			border1.style.border = '10px solid white';
+
+			
+			image1.src = array[0];
+			array.splice(0,1);
+			
+		};
+		
+		function imagegenerator2(){
+
+			const border1 = document.querySelector('.image-container3');
+			const border2 = document.querySelector('.image-container2');
+			border2.style.border = '10px solid white';
+
+			border1.style.border = '10px solid white';
+
+
+			image2.src = array[0];
+			array.splice(0,1);
+		};
+
+		function onclickimg1(){
+			const border1 = document.querySelector('.image-container3');
+			const border2 = document.querySelector('.image-container2');
+			border2.style.borderRadius = "20px";
+			border1.style.borderRadius = "20px";
+			if (array.length === 0) {
+        return; // Break statement or early return
+      }
+			border2.style.border = '10px solid red';
+
+			border1.style.border = '10px solid green';
+
+		image2.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+
+		let timerId = setInterval(() => {
+			imagegenerator2()
+				clearInterval(timerId);
+        }, 1000);
+		};
+
+
+		function onclickimg2(){
+			if (array.length === 0) {
+        return; // Break statement or early return
+      }
+
+			const border1 = document.querySelector('.image-container3');
+			const border2 = document.querySelector('.image-container2');
+						border2.style.borderRadius = "20px";
+			border1.style.borderRadius = "20px";
+			border2.style.border = '10px solid green';
+			border1.style.border = '10px solid red';
+			image1.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+
+			let timerId = setInterval(() => {
+			imagegenerator1()
+				clearInterval(timerId);
+        }, 1000);
+			
+		};
+		image2.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+		image1.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"
+
+		let timerId = setInterval(() => {
+
+			image1.src = array[0];
+			array.splice(0,1);
+		
+			image2.src = array[1];
+			array.splice(0,1);
+
+
+			clearInterval(timerId);
+        }, 4200);
+
+
+
+			
+
+</script>
+	</main>
+
+<div> 
+<p style= "background-image: url('https://img.freepik.com/free-vector/abstract-digital-low-poly-connection-banner-design_1017-32434.jpg?w=1380&t=st=1684257888~exp=1684258488~hmac=990a8fa3b638d240faefdda791acbb35397cfe4a46f196a5bab6f991e3caebec'); text-size-adjust: 20px; text-align: center; font-family: 'Courier New', Courier, monospace; color: azure; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; max-width: fit-content; margin: auto; font-size: 27pxx">NIET Profile Battle Exclusivley for Freshmen #GirlsHadEnough</p>
+<br>
+<p style="padding-bottom:50pxpx;text-align: center;padding-left: 30px;padding-right: 30px;padding-top: 10px; font-family: 'Courier New', Courier, monospace;">
+Terms & Service <br> The purpose of this is definetly not to insult someone but guess what Everyone!<br>
+Naah :]
+</p >
+<style>
+	p{
+		font-size: 20px;
+	}
+</style>
+</div>
+<hr>
+
+<div style=" padding-top: 200px;">
+
+
+<!-- Contact us-->
+
+	<h1> Share Us</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<p>The photos of you, your friends, and even someone you hate..<br> Literally Anyone Youu want
+</p>
+
+    <div class="container text-center align-items-center" id="box">
+			<form action="/contact" method="post">
+				<div class="form-group">
+					<label for="text" style="font-family: 'Courier New', Courier, monospace; color: wheat;">Contact</label>
+					<input type="text" class="form-control" id="name" name="name"  required placeholder="Name(Otional)" >
+				</div>
+				  <div class="form-group">
+					<label style="color: aliceblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" for="exampleFormControlTextarea1">Paste the Links here</label>
+					<textarea  style=" font-family: 'Courier New', Courier, monospace;"name="image" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+				</div>
+				<button type="submit" id="lol" class="btn btn-primary">Submit</button>
+				</form>
+    </div>
+	<style>
+		#box{
+			height: 500;
+			width: 500px;
+			border-radius: 5px;
+			background-image: url("https://img.freepik.com/free-vector/abstract-digital-low-poly-connection-banner-design_1017-32434.jpg?w=1380&t=st=1684257888~exp=1684258488~hmac=990a8fa3b638d240faefdda791acbb35397cfe4a46f196a5bab6f991e3caebec")
+		}
+		#lol{
+			align-items: center;
+			margin:auto;
+			margin-bottom: 5px;
+			background-color: #000;
+			border-radius: 5px;
+			border-width: 2px;
+			border-color: blue;
+			font-family: 'Courier New', Courier, monospace;
+			color: white;
+		}
+	</style>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+</div>
+
+<footer style="background-image: url('https://img.freepik.com/free-vector/abstract-digital-low-poly-connection-banner-design_1017-32434.jpg?w=1380&t=st=1684257888~exp=1684258488~hmac=990a8fa3b638d240faefdda791acbb35397cfe4a46f196a5bab6f991e3caebec'); text-size-adjust: 20px; text-align: center; font-family: 'Courier New', Courier, monospace; color: azure; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; margin: auto;	background-color: rgba(192, 192, 192, 0.8); margin-top: 300px;">
+  <div class="image-container" style="float: center; width: 100%; height: 80px;">
+    <p style="font-size: 40pxpx;color: #000;">Developer Section</p>
+    <a href="https://www.instagram.com">
+      <img src="https://scontent.cdninstagram.com/v/t1.15752-9/342494689_788086219184790_8244536868771557508_n.jpg?stp=dst-jpg_s320x320&_nc_cat=106&ccb=1-7&_nc_sid=5a057b&_nc_ohc=YpS2-2rUssoAX-oYdaR&_nc_oc=AQl-B0SLlZutJ0noDYSR0psLtYg_6ALb3NXz41S6uDdLH9NUOn84vRTobWeZa4qyOIFKkmwnThALUb1Me1O4MIMr&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdSjNI0UuYeSSNOHz9C2RSqiHFXDFitvkdTIMA--t-k-8Q&oe=647B79C4" alt="Instagram Logo" height="30">
+    </a>
+  </div>
+  <div style="clear: both;"></div>
+</footer>
+	
+
+</body>
+
+
+
+
+
+</html>
